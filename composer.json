@@ -1,0 +1,77 @@
+{
+    "name": "alexsyvolap/filament-confetti",
+    "description": "A fluent, zero-config confetti integration for Filament PHP. Add cinematic particle effects to your admin panel",
+    "keywords": [
+        "alexsyvolap",
+        "laravel",
+        "filamentphp",
+        "filament",
+        "filament-plugin",
+        "filament-confetti",
+        "confetti",
+        "canvas-confetti",
+        "effects",
+        "ui"
+    ],
+    "homepage": "https://github.com/alexsyvolap/filament-confetti",
+    "support": {
+        "issues": "https://github.com/alexsyvolap/filament-confetti/issues",
+        "source": "https://github.com/alexsyvolap/filament-confetti"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Syvolap",
+            "email": "syvolap.dev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0 || ^4.0 || ^5.0",
+        "spatie/laravel-package-tools": "^1.15.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.7|^4.0",
+        "pestphp/pest-plugin-arch": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexSyvolap\\FilamentConfetti\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlexSyvolap\\FilamentConfetti\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "phpstan analyse",
+        "lint": "pint",
+        "lint:test": "pint --test",
+        "test": "pest"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexSyvolap\\FilamentConfetti\\FilamentConfettiServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
