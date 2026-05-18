@@ -1,5 +1,7 @@
 # Filament Confetti 🎉
 
+![Defaul Confetti](./art/confetti.jpg)
+
 A fluent, elegant, and zero-config Confetti integration for Filament PHP.
 Powered by the amazing [canvas-confetti](https://github.com/catdad/canvas-confetti) library, this package brings
 cinematic, hardware-accelerated particle effects to your Filament admin panel with a beautiful PHP Builder API.
@@ -43,7 +45,7 @@ use AlexSyvolap\FilamentConfetti\Confetti;
 Confetti::shoot();
 ```
 
-![Defaul Confetti](https://github.com/user-attachments/assets/c1247478-f7f5-4a65-9782-210fc2c5b252)
+![Defaul Confetti](./art/default.gif)
 
 ### Positioning
 
@@ -69,7 +71,7 @@ We ported the most popular cinematic effects so you can use them in one line of 
 Confetti::realistic()->shoot();
 ```
 
-![Realistic Confetti](https://github.com/user-attachments/assets/96b5852f-c10e-4f61-947e-c0c5146c9891)
+![Realistic Confetti](./art/realistic.gif)
 
 #### Show
 
@@ -78,7 +80,7 @@ Confetti::realistic()->shoot();
 Confetti::snow()->shoot();
 ```
 
-![Show](https://github.com/user-attachments/assets/42ac3229-9e2b-4f0d-865a-5709711ee0f0)
+![Show](./art/snow.gif)
 
 #### Fireworks
 
@@ -87,7 +89,7 @@ Confetti::snow()->shoot();
 Confetti::fireworks()->shoot();
 ```
 
-![Fireworks](https://github.com/user-attachments/assets/5e32de82-1b92-4f32-8da5-64106b853d4e)
+![Fireworks](./art/fireworks.gif)
 
 #### Emoji
 
@@ -96,7 +98,7 @@ Confetti::fireworks()->shoot();
 Confetti::emoji('💸')->shoot();
 ```
 
-![Emoji](https://github.com/user-attachments/assets/9f3655e7-cc25-4f3d-85f5-16ead4062bdd)
+![Emoji](./art/emoji.gif)
 
 #### School Pride
 
@@ -105,7 +107,7 @@ Confetti::emoji('💸')->shoot();
 Confetti::colors(['#0057B7', '#FFDD00'])->schoolPride()->shoot();
 ```
 
-![School Pride](https://github.com/user-attachments/assets/cadf5ad4-df1d-43f8-9dd8-82ab161efb23)
+![School Pride](./art/school-pride.gif)
 
 ### Multi-Shots (Crossfire)
 
@@ -118,7 +120,7 @@ Confetti::left()->count(150)
     ->shoot();
 ```
 
-![Crossfire](https://github.com/user-attachments/assets/a6330979-ba31-4027-af60-62e7ab7e2aed)
+![Crossfire](./art/crossfire.gif)
 
 ### Advanced Customization
 
@@ -137,7 +139,7 @@ Confetti::center()
     ->shoot();
 ```
 
-![Advanced Customization](https://github.com/user-attachments/assets/a0202911-5232-420e-8dc2-5b29f71d8312)
+![Advanced Customization](./art/custom.gif)
 
 ### Complex Animations (Loops)
 
@@ -153,7 +155,7 @@ for ($delay = 0; $delay < 3000; $delay += 500) {
 $confetti->shoot();
 ```
 
-![Loops](https://github.com/user-attachments/assets/dd6747e6-d762-4683-8e01-c2f5519fe42c)
+![Loops](./art/loop.gif)
 
 ## Testing
 
