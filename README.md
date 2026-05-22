@@ -1,6 +1,6 @@
 # Filament Confetti 🎉
 
-![Defaul Confetti](./art/confetti.jpg)
+<img src="./art/confetti.jpg" alt="Filament Confetti" class="filament-hidden">
 
 A fluent, elegant, and zero-config Confetti integration for Filament PHP.
 Powered by the amazing [canvas-confetti](https://github.com/catdad/canvas-confetti) library, this package brings
